@@ -23,6 +23,7 @@ const day = moment(today).format("dddd");
 const date = moment(today).format("MMMM D, YYYY");
 return (
 <View style={styles.container}>
+<LinearGradient colors={['#4c669f', 'purple', 'red']} style={styles.linearGradient}>
   <Text style={styles.title}>Events</Text>
   <View style={styles.content}>
     <Text style={styles.day}>{day}</Text>
@@ -31,6 +32,7 @@ return (
   <TouchableOpacity style={styles.circle} onPress={()=>     this.props.navigation.navigate('Detail')}>
    <Icon raised name='send' color="#000" size={60}/>
   </TouchableOpacity>
+  </LinearGradient>
 </View>
  );
  }
@@ -63,6 +65,12 @@ small:{
 circle:{
   top: 350,
   left: 260,
+},
+linearGradient: {
+  flex: 1,
+  paddingLeft: 15,
+  paddingRight: 15,
+  borderRadius: 5
 }
 
 })

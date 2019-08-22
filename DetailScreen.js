@@ -15,7 +15,7 @@ static navigationOptions = ({ navigation }) => {
 return {
   title: 'Event Listing',
   headerStyle: {backgroundColor: "black"},
-  headerTitleStyle: {textAlign: "center",flex: 1},
+  headerTitleStyle: {textAlign: "justify",flex: 1},
  };
 };
 constructor(props) {
